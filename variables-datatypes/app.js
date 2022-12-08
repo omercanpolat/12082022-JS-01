@@ -40,12 +40,42 @@ let num2 = 3;
 let result = num1 + num2;
 console.log(result); //?8
 
-
 //let num1 = 5;
 //let num2 = 3;
 //let result = num1 + num2;
 //console.log(++result); //?9
 
+//=================================== VAR =========================================//
+
+count = 55;
+console.log(count); //! eğer unutup bir şey yazmazsak VAR olarak tanımlar.
+// JS ilk kez görmüş olduğu count'u VAR değişkeni olarak tanımladı.
+
+var x = 11;
+console.log(x);
+
+//==================================== GLOBAL VE LOKAL ALANLAR ====================//
+
+{
+  //! burası lokal bir alandır
+  let a = 2;
+  const b = 5;
+  console.log(a, b); // 2 5
+}
+
+//! A VE B BU ALANDATANIMLI DEĞİLDİR.
+console.log(a, b); // error
+
+//============================
+
+{
+  //! burası lokal bir alandır
+  var c = 99;
+  console.log(c); // 99
+}
+
+//! c ALANDA TANIMLI olur. VAR yüzünden. VAR ile tanımlanan bir değişken sürekli GLOBAL olur, her yerden erişilebilir.
+console.log(c); // 99
 
 
-
+//*
